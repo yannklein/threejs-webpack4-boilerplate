@@ -10,8 +10,7 @@ const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    main: './src/index.js',
-    vendor: './src/vendor.js'
+    main: './src/scripts/index.js'
   },
   module: {
     rules: [

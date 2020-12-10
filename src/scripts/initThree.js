@@ -4,8 +4,8 @@ let camera;
 let scene;
 let renderer;
 
-const init = () => {
-  camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.01, 10);
+const init = threeEl => {
+  camera = new THREE.PerspectiveCamera(70, threeEl.offsetWidth / threeEl.offsetHeight, 0.01, 10);
   camera.position.z = 1;
 
   scene = new THREE.Scene();
@@ -18,8 +18,8 @@ const init = () => {
   scene.add(mesh);
 
   renderer = new THREE.WebGLRenderer({ antialias: true });
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  document.body.appendChild(renderer.domElement);
+  renderer.setSize(threeEl.offsetWidth, threeEl.offsetHeight);
+  threeEl.appendChild(renderer.domElement);
 };
 
 const animate = () => {
@@ -30,8 +30,8 @@ const animate = () => {
   renderer.render(scene, camera);
 };
 
-const initThree = () => {
-  init();
+const initThree = threeEl => {
+  init(threeEl);
   animate();
 };
 
