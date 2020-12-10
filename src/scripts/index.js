@@ -2,7 +2,7 @@ import * as OfflinePluginRuntime from 'offline-plugin/runtime';
 
 import '../index.html';
 import '../styles/index.scss';
-import initThree from './initThree';
+import initThree from './three/three-init';
 
 console.log(
   `%c Yann's ThreeJS boilerplate`,
