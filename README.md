@@ -2,9 +2,10 @@
 
 ## A static website boilerplate for ThreeJS projects managed via Webpack.
 
-Based on [tris-webpack-boilerplate](https://github.com/tr1s/tris-webpack-boilerplate)
+Based on [tris-webpack-boilerplate](https://github.com/tr1s/tris-webpack-boilerplate).
+Use Webpack and ThreeJS via node-module.
 
-Usage:
+### Usage:
 
 To run the app on `localhost:8080`:
 ```
@@ -17,5 +18,5 @@ yarn build
 ```
 To build and deploy the app on GH (need the gh pages setting activated for `master/docs`):
 ```
-yarn deploy # 
+yarn deploy 
 ```
