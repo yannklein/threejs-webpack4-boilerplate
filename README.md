@@ -5,6 +5,10 @@
 Based on [tris-webpack-boilerplate](https://github.com/tr1s/tris-webpack-boilerplate).
 Use Webpack and ThreeJS via node-module.
 
+### Example:
+
+[The ThreeJS Rolling cube](https://yannklein.github.io/threejs-webpack-boilerplate/)
+
 ### Usage:
 
 To run the app on `localhost:8080`:
