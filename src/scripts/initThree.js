@@ -20,6 +20,14 @@ const init = threeEl => {
   renderer = new THREE.WebGLRenderer({ antialias: true });
   renderer.setSize(threeEl.offsetWidth, threeEl.offsetHeight);
   threeEl.appendChild(renderer.domElement);
+
+  const onWindowResize = () => {
+    camera.aspect = threeEl.offsetWidth / threeEl.offsetHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(threeEl.offsetWidth, threeEl.offsetHeight);
+  };
+
+  window.addEventListener('resize', onWindowResize, false);
 };
 
 const animate = () => {
